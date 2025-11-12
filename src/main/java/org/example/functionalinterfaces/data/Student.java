@@ -16,4 +16,9 @@ public class Student {
     private double gpa;
     private String gender;
     private List<String> activities = new ArrayList<>();
+
+    public void printAllActivities()
+    {
+        System.out.println(activities);
+    }
 }
