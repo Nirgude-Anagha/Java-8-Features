@@ -2,8 +2,13 @@ package org.example.functionalinterfaces.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDatabase {
+
+    public static Supplier<Student> supplier = () -> {
+        return new Student("Kush", 4, 3.1, "male", Arrays.asList("swimming","volleyball"));
+    };
 
     public static List<Student> getStudents(){
         Student s1 = new Student("John", 2, 3.6, "male", Arrays.asList("swimming","dancing"));
